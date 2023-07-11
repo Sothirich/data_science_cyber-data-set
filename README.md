@@ -1,4 +1,6 @@
-# Task : Construct visualizations for each assigned table.
+# Task: Construct visualizations for each assigned table.
+
+Your assigned tables can be found in the pinned messages of the main telegram group.
 
 Copy the `appends_clean.ipynb` then rename it to `your_name.ipynb`
 
