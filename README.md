@@ -12,7 +12,7 @@ Copy the `appends_clean.ipynb` then rename it to `your_name.ipynb`
     ```python
     # Pitou
     ...
-    df = pd.read_csv('Data/Data_of_Attack_Back.csv')
+    Data_of_Attack_Back_df = pd.read_csv('Data/Data_of_Attack_Back.csv')
     ...
     ```
 
