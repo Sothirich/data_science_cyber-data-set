@@ -10,10 +10,25 @@ Copy the `appends_clean.ipynb` then rename it to `your_name.ipynb`
     <hr>
     
     ```python
-      # Pitou
-      ...
-      df = pd.read_csv('Data/Data_of_Attack_Back.csv')
-      ...
+    # Pitou
+    ...
+    df = pd.read_csv('Data/Data_of_Attack_Back.csv')
+    ...
+    ```
+
+    <hr>
+- Your variables naming convention must start with the name of the table you are working on.
+  - For example
+    <hr>
+
+    ```python
+    # Pitou
+    ...
+    # Data_of_Attack_Back -- Setting the x axic as EXAMPLE and y axis
+    ...
+    Data_of_Attack_Back_fig, Data_of_Attack_Back_ax = plt.subplots(nrows=1, ncols=1, figsize=(120,40))
+    ...
+      
     ```
 
     <hr>
