@@ -31,7 +31,7 @@ Collect the data from the identified sources using appropriate methods such as w
 #### c. Clean data -- DONE
 Clean the collected data by removing any errors, inconsistencies, or duplicates.
 
-#### d. Transform data -- IN PROGRESS
+#### d. Transform data -- DONE
 <details>
 <summary>Steps</summary>
 <br>
@@ -54,10 +54,10 @@ Select a subset of the most relevant features to use in modeling, which can impr
 <hr>
 </details>
 
-#### e. Merge data -- IN PROGRESS
-Merge multiple datasets into a single dataset if necessary.
+#### ~~e. Merge data~~
+~~Merge multiple datasets into a single dataset if necessary.~~
 
-#### f. Split data -- IN PROGRESS
+#### f. Split data -- DONE
 Split the dataset into training and testing sets for model building and evaluation.
 
 <hr>

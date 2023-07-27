@@ -25,3 +25,27 @@ selector = SelectKBest(f_classif, k=10)
 selector.fit(df.drop('attack', axis=1), df['attack'])
 selected_cols = df.drop('attack', axis=1).columns[selector.get_support()]
 print('The selected features are:', selected_cols)
+
+##########
+
+
+## Step 4: Split data
+# Import libraries
+from sklearn.model_selection import train_test_split
+
+### Split the dataset into training and testing sets
+'''  
+  We use the train_test_split function to split the dataset into 
+    features (df.drop('attack', axis=1)) and 
+    labels (df['attack']) subsets, 
+    with 
+      a test size of 0.3 (30% of the data) and 
+      a random state of 42 (for reproducibility).
+'''
+X_train, X_test, y_train, y_test = train_test_split(df.drop('attack', axis=1), df['attack'], test_size=0.3, random_state=42)
+
+### Print the shapes of the subsets
+print('X_train shape:', X_train.shape)
+print('X_test shape:', X_test.shape)
+print('y_train shape:', y_train.shape)
+print('y_test shape:', y_test.shape)
