@@ -48,7 +48,7 @@ df.to_csv('Data/Data_of_Attack_Appends.csv', index=False)
 
 ### export to a variable
 df = pd.read_csv('Data/Data_of_Attack_Appends.csv')
-
+######################
 
 ## Step 2: Clean data
 
@@ -81,4 +81,4 @@ df.to_csv('Data/Data_of_Attack_Appends_Clean.csv', index=False)
 ### exporting cleaned data to a variable
 df = pd.read_csv('Data/Data_of_Attack_Appends_Clean.csv')
 # df
-
+######################
