@@ -27,17 +27,17 @@ header = df1.columns
 df3.columns = header
 
 ### add new column attack
-df1['attack']=['data_of_attack_back']*df1.shape[0]
-df2['attack']=['data_of_attack_back_BufferOverflow']*df2.shape[0]
-df3['attack']=['data_of_attack_back_FTPWrite']*df3.shape[0]
-df4['attack']=['data_of_attack_back_GuessPassword']*df4.shape[0]
-df5['attack']=['data_of_attack_back_NMap']*df5.shape[0]
-df6['attack']=['data_of_attack_back_Neptune']*df6.shape[0]
-df7['attack']=['data_of_attack_back_Normal']*df7.shape[0]
-df8['attack']=['data_of_attack_back_PortSweep']*df8.shape[0]
-df9['attack']=['data_of_attack_back_RootKit']*df9.shape[0]
-df10['attack']=['data_of_attack_back_Satan']*df10.shape[0]
-df11['attack']=['data_of_attack_back_Smurf']*df11.shape[0]
+df1['attack']=['Back']*df1.shape[0]
+df2['attack']=['BufferOverflow']*df2.shape[0]
+df3['attack']=['FTPWrite']*df3.shape[0]
+df4['attack']=['GuessPassword']*df4.shape[0]
+df5['attack']=['NMap']*df5.shape[0]
+df6['attack']=['Neptune']*df6.shape[0]
+df7['attack']=['Normal']*df7.shape[0]
+df8['attack']=['PortSweep']*df8.shape[0]
+df9['attack']=['RootKit']*df9.shape[0]
+df10['attack']=['Satan']*df10.shape[0]
+df11['attack']=['Smurf']*df11.shape[0]
 
 ### concate all the data to one file
 df=pd.concat([df1,df2,df3,df4,df5,df6,df7,df8,df9,df10,df11])
