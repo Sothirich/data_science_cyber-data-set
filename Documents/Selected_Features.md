@@ -1,5 +1,5 @@
 # Selected Features
-Some of the most relevant features for network intrusion detection are:
+Some of the most **relevant AND recommended** features for network intrusion detection are:
 
 | Feature | Description |
 | --- | --- |
