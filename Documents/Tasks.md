@@ -1,11 +1,20 @@
+
+
 # 1. Define the problem [REQUIRED]
-Clearly define the problem you want to solve and the goals you want to achieve.
+<details>
+  <summary>Details</summary>
+  <br>
+  • Clearly define the problem you want to solve and the goals you want to achieve.
 
-<hr>
+  <hr>
 
-###### The goals are to use binomial or multinomial classification techniques to predict whether a network activity is normal or an attack, and if it is an attack, what type of attack it is.
+  #### The goals are to use binomial or multinomial classification techniques to predict whether a network activity is normal or an attack, and if it is an attack, what type of attack it is.
 
-<hr>
+  <hr>
+  
+</details>
+
+
 
 # 2. Collect and prepare data [REQUIRED]
 Collect relevant data from various sources and clean, preprocess, and transform it into a suitable format for analysis.
