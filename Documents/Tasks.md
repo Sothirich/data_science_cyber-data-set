@@ -32,7 +32,27 @@ Collect the data from the identified sources using appropriate methods such as w
 Clean the collected data by removing any errors, inconsistencies, or duplicates.
 
 #### d. Transform data -- IN PROGRESS
-Transform the data into a suitable format for analysis by performing operations such as normalization, encoding, or aggregation.
+<details>
+<summary>Steps</summary>
+<br>
+• Transform the data into a suitable format for analysis by performing operations such as normalization, encoding, or aggregation.
+
+<hr>
+
+##### I. Encoding categorical variables
+Encode categorical variables using techniques such as one-hot encoding or label encoding to convert them into numerical values that can be used in modeling.
+
+##### II. Normalizing numerical variables
+Normalize numerical variables to ensure that they have similar scales and ranges, which can improve the performance of some modeling techniques.
+
+##### III. Feature engineering
+Create new features by combining or transforming existing features to capture additional information or relationships in the data.
+
+##### IV. Feature selection
+Select a subset of the most relevant features to use in modeling, which can improve model performance and interpretability.
+
+<hr>
+</details>
 
 #### e. Merge data -- IN PROGRESS
 Merge multiple datasets into a single dataset if necessary.
