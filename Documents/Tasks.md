@@ -1,5 +1,3 @@
-
-
 # 1. Define the problem [REQUIRED]
 <details>
   <summary>Details</summary>
@@ -17,7 +15,10 @@
 
 
 # 2. Collect and prepare data [REQUIRED]
-Collect relevant data from various sources and clean, preprocess, and transform it into a suitable format for analysis.
+<details>
+<summary>Details</summary>
+<br>
+• Collect relevant data from various sources and clean, preprocess, and transform it into a suitable format for analysis.
 
 <hr>
 
@@ -40,9 +41,13 @@ Merge multiple datasets into a single dataset if necessary.
 Split the dataset into training and testing sets for model building and evaluation.
 
 <hr>
+</details>
 
 # 3. Explore the data [REQUIRED]
-Perform exploratory data analysis to understand the data, identify patterns and relationships, and generate hypotheses.
+<details>
+<summary>Details</summary>
+<br>
+• Perform exploratory data analysis to understand the data, identify patterns and relationships, and generate hypotheses.
 
 <hr>
 
@@ -65,9 +70,13 @@ Create visualizations such as scatter plots, histograms, and box plots to explor
 Based on the exploratory analysis, generate hypotheses about the relationships between variables and their potential impact on the outcome.
 
 <hr>
+</details>
 
 # 4. Build models [REQUIRED]
-Select appropriate modeling techniques and build predictive or descriptive models using the prepared data.
+<details>
+<summary>Details</summary>
+<br>
+• Select appropriate modeling techniques and build predictive or descriptive models using the prepared data.
 
 <hr>
 
@@ -87,9 +96,13 @@ Tune the hyperparameters of the models to optimize their performance.
 Combine multiple models into an ensemble model to improve performance and robustness.
 
 <hr>
+</details>
 
 # 5. Evaluate models [OPTIONAL]
-Evaluate the performance of the models using appropriate metrics and select the best model for deployment.
+<details>
+<summary>Details</summary>
+<br>
+• Evaluate the performance of the models using appropriate metrics and select the best model for deployment.
 
 <hr>
 
@@ -109,9 +122,18 @@ Validate the performance of the selected model using additional data or cross-va
 Interpret the results of the model to understand its strengths and weaknesses and to gain insights into the data.
 
 <hr>
+</details>
 
 # 6. Deploy models [NOT NECESSARY]
-Deploy the selected model in a production environment and integrate it with other systems.
+<details>
+<summary>Details</summary>
+<br>
+• Deploy the selected model in a production environment and integrate it with other systems.
+</details>
 
 # 7. Monitor and maintain models [NOT NECESSARY]
-Monitor the performance of the deployed model over time and update or retrain it as needed.
+<details>
+<summary>Details</summary>
+<br>
+• Monitor the performance of the deployed model over time and update or retrain it as needed.
+</details>
