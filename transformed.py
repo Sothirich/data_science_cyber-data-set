@@ -2,7 +2,7 @@
 ### Import libraries
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.feature_selection import SelectKBest, f_classif
-from Tasks.cleaned_and_appended import df
+from cleaned_and_appended import df
 
 ### Encode categorical variables
 le = LabelEncoder()
