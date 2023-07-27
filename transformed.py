@@ -12,7 +12,7 @@ df['flag'] = le.fit_transform(df['flag'])
 
 ### Normalize numerical variables
 scaler = MinMaxScaler()
-num_cols = ['duration', 'src_bytes', 'dst_bytes', 'count', 'srv_count', 'same_srv_rate', 'diff_srv_rate', 'dst_host_count', 'dst_host_srv_count', 'dst_host_same_srv_rate', 'dst_host_diff_srv_rate', 'dst_host_same_src_port_rate', 'dst_host_serror_rate']
+num_cols = df.select_dtypes(include=['int64', 'float64']).columns
 df[num_cols] = scaler.fit_transform(df[num_cols])
 
 ### Feature engineering
