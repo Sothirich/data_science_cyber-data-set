@@ -71,16 +71,16 @@ Split the dataset into training and testing sets for model building and evaluati
 
 <hr>
 
-#### a. Summarize the data -- IN PROGRESS
+#### a. Summarize the data -- DONE
 Generate summary statistics and visualizations to get a high-level overview of the data.
 
-#### b. Check for missing or incomplete data -- IN PROGRESS
+#### b. Check for missing or incomplete data -- DONE
 Identify any missing or incomplete data and decide how to handle it (e.g., impute, remove, or ignore).
 
-#### c. Check for outliers -- IN PROGRESS
+#### c. Check for outliers -- DONE
 Identify any outliers in the data and decide how to handle them (e.g., remove, transform, or keep).
 
-#### d. Check for correlations -- IN PROGRESS
+#### d. Check for correlations -- DONE
 Calculate correlation coefficients between pairs of variables to identify any relationships.
 
 #### e. Visualize the data -- IN PROGRESS
