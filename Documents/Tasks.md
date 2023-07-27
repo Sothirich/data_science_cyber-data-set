@@ -12,22 +12,22 @@ Collect relevant data from various sources and clean, preprocess, and transform 
 
 <hr>
 
-#### a. Identify data sources
-Identify the sources of data that are relevant to the problem and goals of the project.
+#### ~~a. Identify data sources~~
+~~Identify the sources of data that are relevant to the problem and goals of the project.~~
 
-#### b. Collect data
+#### b. Collect data -- DONE
 Collect the data from the identified sources using appropriate methods such as web scraping, APIs, or manual data entry.
 
-#### c. Clean data
+#### c. Clean data -- DONE
 Clean the collected data by removing any errors, inconsistencies, or duplicates.
 
-#### d. Transform data
+#### d. Transform data -- IN PROGRESS
 Transform the data into a suitable format for analysis by performing operations such as normalization, encoding, or aggregation.
 
-#### e. Merge data
+#### e. Merge data -- IN PROGRESS
 Merge multiple datasets into a single dataset if necessary.
 
-#### f. Split data
+#### f. Split data -- IN PROGRESS
 Split the dataset into training and testing sets for model building and evaluation.
 
 <hr>
@@ -37,22 +37,22 @@ Perform exploratory data analysis to understand the data, identify patterns and 
 
 <hr>
 
-#### a. Summarize the data
+#### a. Summarize the data -- IN PROGRESS
 Generate summary statistics and visualizations to get a high-level overview of the data.
 
-#### b. Check for missing or incomplete data
+#### b. Check for missing or incomplete data -- IN PROGRESS
 Identify any missing or incomplete data and decide how to handle it (e.g., impute, remove, or ignore).
 
-#### c. Check for outliers
+#### c. Check for outliers -- IN PROGRESS
 Identify any outliers in the data and decide how to handle them (e.g., remove, transform, or keep).
 
-#### d. Check for correlations
+#### d. Check for correlations -- IN PROGRESS
 Calculate correlation coefficients between pairs of variables to identify any relationships.
 
-#### e. Visualize the data
+#### e. Visualize the data -- IN PROGRESS
 Create visualizations such as scatter plots, histograms, and box plots to explore the distribution of the data and identify patterns and relationships.
 
-#### f. Generate hypotheses
+#### f. Generate hypotheses -- IN PROGRESS
 Based on the exploratory analysis, generate hypotheses about the relationships between variables and their potential impact on the outcome.
 
 <hr>
@@ -62,19 +62,19 @@ Select appropriate modeling techniques and build predictive or descriptive model
 
 <hr>
 
-#### a. Select modeling techniques
+#### a. Select modeling techniques -- IN PROGRESS
 Choose appropriate modeling techniques based on the problem, goals, and data of the project.
 
-#### b. Preprocess data
+#### b. Preprocess data -- IN PROGRESS
 Preprocess the data to prepare it for modeling, such as scaling or normalizing the features.
 
-#### c. Train models
+#### c. Train models -- IN PROGRESS
 Train the selected models using the preprocessed training data.
 
-#### d. Tune models
+#### d. Tune models -- IN PROGRESS
 Tune the hyperparameters of the models to optimize their performance.
 
-#### e. Ensemble models
+#### e. Ensemble models -- IN PROGRESS
 Combine multiple models into an ensemble model to improve performance and robustness.
 
 <hr>
