@@ -6,7 +6,7 @@ import pandas as pd
 ## Step 1 : Collect data
 
 ### For testing only
-additional_path = ''
+additional_path = 'drive/MyDrive/'
 
 ### reading data
 df1=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back.csv')
