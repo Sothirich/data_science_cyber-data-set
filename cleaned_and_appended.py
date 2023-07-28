@@ -2,10 +2,6 @@
 
 ## Importing libraries
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-
 
 ## Step 1 : Collect data
 
@@ -77,8 +73,4 @@ df.columns = df.columns.str.replace(' ', '')
 
 ### exporting cleaned data to csv file
 df.to_csv('Data/Data_of_Attack_Appends_Clean.csv', index=False)
-
-### exporting cleaned data to a variable
-df = pd.read_csv('Data/Data_of_Attack_Appends_Clean.csv')
-# df
 ######################

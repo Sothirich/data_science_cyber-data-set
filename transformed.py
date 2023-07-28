@@ -2,7 +2,11 @@
 ### Import libraries
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.feature_selection import SelectKBest, f_classif
-from cleaned_and_appended import df
+import pandas as pd
+
+### exporting cleaned data to a variable
+df = pd.read_csv('Data/Data_of_Attack_Appends_Clean.csv')
+# df
 
 ### Encode categorical variables
 le = LabelEncoder()
@@ -24,6 +28,14 @@ df['src_dst_ratio'] = df['src_bytes'] / (df['dst_bytes'] + 0.001)
 selector = SelectKBest(f_classif, k=10)
 selector.fit(df.drop('attack', axis=1), df['attack'])
 selected_cols = df.drop('attack', axis=1).columns[selector.get_support()]
+
+### Convertion to list
+selected_cols = selected_cols.tolist()
+
+### Adding more features to the list
+selected_cols.append('duration')
+selected_cols.append('dst_bytes')
+
 print('The selected features are:', selected_cols)
 
 ##########
