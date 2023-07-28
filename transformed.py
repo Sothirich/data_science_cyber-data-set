@@ -41,19 +41,24 @@ print('The selected features are:', selected_cols)
 ## Step 4: Split data
 # Import libraries
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 
-### Split the dataset into training and testing sets
-'''  
-  We use the train_test_split function to split the dataset into 
-    features (df.drop('attack', axis=1)) and 
-    labels (df['attack']) subsets, 
-    with 
-      a test size of 0.3 (30% of the data) and 
-      a random state of 42 (for reproducibility).
-'''
-X_train, X_test, y_train, y_test = train_test_split(df.drop('attack', axis=1), df['attack'], test_size=0.3, random_state=42)
+### Define the selected features
+selected_features = selected_cols
 
-### Print the shapes of the subsets
+### Split the dataset into X and y, using the selected features and the attack column
+X = df[selected_features]
+y = df['attack']
+
+### Split the dataset into training and testing sets, using 70% for training and 30% for testing, and a random state of 42
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+#### Feature Scaling
+sc = StandardScaler()
+X_train = sc.fit_transform(X_train)
+X_test = sc.transform(X_test)
+
+# Print the shapes of the training and testing sets
 print('X_train shape:', X_train.shape)
 print('X_test shape:', X_test.shape)
 print('y_train shape:', y_train.shape)
