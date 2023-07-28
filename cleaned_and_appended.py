@@ -5,18 +5,21 @@ import pandas as pd
 
 ## Step 1 : Collect data
 
+### For testing only
+additional_path = ''
+
 ### reading data
-df1=pd.read_csv('Data/Data_of_Attack_Back.csv')
-df2=pd.read_csv('Data/Data_of_Attack_Back_BufferOverflow.csv')
-df3=pd.read_csv('Data/Data_of_Attack_Back_FTPWrite.csv')
-df4=pd.read_csv('Data/Data_of_Attack_Back_GuessPassword.csv')
-df5=pd.read_csv('Data/Data_of_Attack_Back_NMap.csv')
-df6=pd.read_csv('Data/Data_of_Attack_Back_Neptune.csv')
-df7=pd.read_csv('Data/Data_of_Attack_Back_Normal.csv')
-df8=pd.read_csv('Data/Data_of_Attack_Back_PortSweep.csv')
-df9=pd.read_csv('Data/Data_of_Attack_Back_RootKit.csv')
-df10=pd.read_csv('Data/Data_of_Attack_Back_Satan.csv')
-df11=pd.read_csv('Data/Data_of_Attack_Back_Smurf.csv')
+df1=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back.csv')
+df2=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back_BufferOverflow.csv')
+df3=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back_FTPWrite.csv')
+df4=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back_GuessPassword.csv')
+df5=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back_NMap.csv')
+df6=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back_Neptune.csv')
+df7=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back_Normal.csv')
+df8=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back_PortSweep.csv')
+df9=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back_RootKit.csv')
+df10=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back_Satan.csv')
+df11=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back_Smurf.csv')
 
 ### add missing header to Data_of_Attack_Back_FTPWrite.csv
 header = df1.columns
@@ -39,11 +42,6 @@ df11['attack']=['Smurf']*df11.shape[0]
 df=pd.concat([df1,df2,df3,df4,df5,df6,df7,df8,df9,df10,df11])
 df.reset_index()
 
-### export data to csv file
-df.to_csv('Data/Data_of_Attack_Appends.csv', index=False)
-
-### export to a variable
-df = pd.read_csv('Data/Data_of_Attack_Appends.csv')
 ######################
 
 ## Step 2: Clean data
@@ -72,10 +70,10 @@ df.drop_duplicates(inplace=True)
 df.columns = df.columns.str.replace(' ', '')
 
 ### exporting cleaned data to csv file
-df.to_csv('Data/Data_of_Attack_Appends_Clean.csv', index=False)
+df.to_csv(additional_path + 'Data/Data_of_Attack_Appends_Clean.csv', index=False)
 
 ### exporting cleaned data to a variable
-df = pd.read_csv('Data/Data_of_Attack_Appends_Clean.csv')
+df = pd.read_csv(additional_path + 'Data/Data_of_Attack_Appends_Clean.csv')
 # df
 
 ######################
