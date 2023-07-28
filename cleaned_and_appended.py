@@ -73,4 +73,9 @@ df.columns = df.columns.str.replace(' ', '')
 
 ### exporting cleaned data to csv file
 df.to_csv('Data/Data_of_Attack_Appends_Clean.csv', index=False)
+
+### exporting cleaned data to a variable
+df = pd.read_csv('Data/Data_of_Attack_Appends_Clean.csv')
+# df
+
 ######################

@@ -3,10 +3,7 @@
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.feature_selection import SelectKBest, f_classif
 import pandas as pd
-
-### exporting cleaned data to a variable
-df = pd.read_csv('Data/Data_of_Attack_Appends_Clean.csv')
-# df
+from cleaned_and_appended import df
 
 ### Encode categorical variables
 le = LabelEncoder()
