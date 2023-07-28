@@ -2,6 +2,8 @@
 
 ## Importing libraries
 import pandas as pd
+
+## If you are NOT using Google Colab, comment out the following lines
 from google.colab import drive
 drive.mount('/content/drive')
 
