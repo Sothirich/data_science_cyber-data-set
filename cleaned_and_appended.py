@@ -2,6 +2,8 @@
 
 ## Importing libraries
 import pandas as pd
+from google.colab import drive
+drive.mount('/content/drive')
 
 ## Step 1 : Collect data
 
