@@ -14,6 +14,7 @@ df['flag'] = le.fit_transform(df['flag'])
 ### Normalize numerical variables
 scaler = MinMaxScaler()
 num_cols = df.select_dtypes(include=['int64', 'float64']).columns
+num_cols = num_cols.drop('attack')
 df[num_cols] = scaler.fit_transform(df[num_cols])
 
 ### Feature engineering
