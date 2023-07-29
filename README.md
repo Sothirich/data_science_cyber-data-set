@@ -51,6 +51,8 @@ Create new features by combining or transforming existing features to capture ad
 ##### IV. Feature selection
 Select a subset of the most relevant features to use in modeling, which can improve model performance and interpretability.
 
+To see more details, please visit [Feature Selection](Documents\1.%20Selected_Features.md)
+
 <hr>
 </details>
 
