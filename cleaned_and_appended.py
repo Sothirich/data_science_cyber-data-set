@@ -29,18 +29,21 @@ df11=pd.read_csv(additional_path + 'Data/Data_of_Attack_Back_Smurf.csv')
 header = df1.columns
 df3.columns = header
 
+### Converting attack names to numbers
+## Normal = 0, Back = 1, BufferOverflow = 2, FTPWrite = 3, GuessPassword = 4, NMap = 5, Neptune = 6, PortSweep = 7, RootKit = 8, Satan = 9, Smurf = 10
+
 ### add new column attack
-df1['attack']=['Back']*df1.shape[0]
-df2['attack']=['BufferOverflow']*df2.shape[0]
-df3['attack']=['FTPWrite']*df3.shape[0]
-df4['attack']=['GuessPassword']*df4.shape[0]
-df5['attack']=['NMap']*df5.shape[0]
-df6['attack']=['Neptune']*df6.shape[0]
-df7['attack']=['Normal']*df7.shape[0]
-df8['attack']=['PortSweep']*df8.shape[0]
-df9['attack']=['RootKit']*df9.shape[0]
-df10['attack']=['Satan']*df10.shape[0]
-df11['attack']=['Smurf']*df11.shape[0]
+df1['attack']= [1] * df1.shape[0]
+df2['attack']= [2] * df2.shape[0]
+df3['attack']= [3] * df3.shape[0]
+df4['attack']= [4] * df4.shape[0]
+df5['attack']= [5] * df5.shape[0]
+df6['attack']= [6] * df6.shape[0]
+df7['attack']= [0] * df7.shape[0]
+df8['attack']= [7] * df8.shape[0]
+df9['attack']= [8] * df9.shape[0]
+df10['attack']= [9] * df10.shape[0]
+df11['attack']= [10] * df11.shape[0]
 
 ### concate all the data to one file
 df=pd.concat([df1,df2,df3,df4,df5,df6,df7,df8,df9,df10,df11])
